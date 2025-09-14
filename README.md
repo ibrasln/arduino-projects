@@ -4,7 +4,6 @@ This repository contains beginner-friendly Arduino projects that I also share on
 Each project has:
 - ✅ Arduino code (`.ino`)
 - ✅ Circuit design (TinkerCad screenshot)
-- ✅ Short description
 
 ---
 
