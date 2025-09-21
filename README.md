@@ -25,4 +25,5 @@ Each project has:
   By default, a pin without a signal can "float" between HIGH and LOW, causing random results.  
   `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
   When the button is pressed, it connects the pin to GND → the reading becomes LOW.
+  
 👉 [View Project Folder](./LedLightingWithButton)
