@@ -19,8 +19,8 @@ Each project has:
 ### 2. LED Lighting With Button
 - First interactive project with Arduino.
 - Pressing a button lights up an LED, releasing it turns it off.
-- Components: Arduino Uno, 1x LED, 1x button, 1x 330Ω resistor (for LED), 4x jumper wires.
-- Circuit: LED on Pin 13, Button on Pin 2 (with `INPUT_PULLUP`).
+- Components: Arduino Uno, 1x LED, 1x button, 1x 330Ω resistor (for LED), 5x jumper wires.
+- Circuit: LED on Pin 8, Button on Pin 10 (with `INPUT_PULLUP`).
 - Why `INPUT_PULLUP`?  
   By default, a pin without a signal can "float" between HIGH and LOW, causing random results.  
   `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
