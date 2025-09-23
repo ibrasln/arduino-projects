@@ -34,4 +34,5 @@ Each project has:
 - Components: Arduino Uno, 1x Red LED, 1x Yellow LED, 1x Green LED, 3x 330Ω resistors, 7x jumper wires, 1x breadboard.
 - Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
 - Purpose: Demonstrates controlling multiple outputs and using delays for timing.
+
 👉 [View Project Folder](./TrafficLight)
