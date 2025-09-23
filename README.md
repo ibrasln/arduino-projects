@@ -27,3 +27,11 @@ Each project has:
   When the button is pressed, it connects the pin to GND → the reading becomes LOW.
   
 👉 [View Project Folder](./LedLightingWithButton)
+
+### 3. Traffic Light
+- Simulates a basic traffic light system with 3 LEDs.
+- LEDs light up in sequence: green → yellow → red → repeat.
+- Components: Arduino Uno, 1x Red LED, 1x Yellow LED, 1x Green LED, 3x 330Ω resistors, 7x jumper wires, 1x breadboard.
+- Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
+- Purpose: Demonstrates controlling multiple outputs and using delays for timing.
+👉 [View Project Folder](./TrafficLight)
