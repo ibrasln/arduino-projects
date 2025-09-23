@@ -30,7 +30,7 @@ Each project has:
 
 ### 3. Traffic Light
 - Simulates a basic traffic light system with 3 LEDs.
-- LEDs light up in sequence: green → yellow → red → repeat.
+- LEDs light up in sequence: red → yellow → green → repeat.
 - Components: Arduino Uno, 1x Red LED, 1x Yellow LED, 1x Green LED, 3x 330Ω resistors, 7x jumper wires, 1x breadboard.
 - Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
 - Purpose: Demonstrates controlling multiple outputs and using delays for timing.
