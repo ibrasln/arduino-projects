@@ -36,3 +36,14 @@ Each project has:
 - Purpose: Demonstrates controlling multiple outputs and using delays for timing.
 
 👉 [View Project Folder](./TrafficLight)
+
+### 4. Potentiometer LED Brightness
+- Control LED brightness using a potentiometer.
+- Potentiometer works as a variable resistor: turning the knob changes the voltage on its middle pin.
+- Arduino reads this value as analog input (0–1023) and maps it to LED brightness (0–255).
+- Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 1x potentiometer (10kΩ), 5x jumper wires, 1x breadboard.
+- Circuit: Potentiometer middle pin → A0, side pins → 5V & GND. LED anode → Pin 9 with resistor, cathode → GND.
+- Purpose: Introduces analog input with analogRead() and PWM output with analogWrite().
+
+👉 [View Project Folder](./PotentiometerLEDBrightness)
+
