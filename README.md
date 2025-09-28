@@ -53,7 +53,7 @@ Each project has:
 - Components: Arduino Uno, 5x LEDs, 5x 330Ω resistors, 10x jumper wires, 1x breadboard.
 - Circuit: LEDs connected to pins 3–7 (with resistors). Cathodes to GND.
 - Purpose: Demonstrates how to manage multiple outputs efficiently with arrays.
-**Key concept: `sizeof`**  
+- **Key concept: `sizeof`**  
 Instead of hardcoding the array length, we calculate it dynamically:  
 
 
