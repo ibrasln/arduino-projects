@@ -56,4 +56,6 @@ Each project has:
 - **Key concept: `sizeof`**  
 Instead of hardcoding the array length, we calculate it dynamically:  
 
+👉 [View Project Folder](./KnightRider)
+
 
