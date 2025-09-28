@@ -50,7 +50,7 @@ Each project has:
 ### 5. Knight Rider LEDs
 - LEDs light up one by one from left to right, then back again (like the Knight Rider car).
 - Uses arrays, `for` loops, and `sizeof` to calculate the number of LEDs automatically.
-- Components: Arduino Uno, 5x LEDs, 5x 330Ω resistors, 10x jumper wires, 1x breadboard.
+- Components: Arduino Uno, 5x LEDs, 5x 330Ω resistors, 11x jumper wires, 1x breadboard.
 - Circuit: LEDs connected to pins 3–7 (with resistors). Cathodes to GND.
 - Purpose: Demonstrates how to manage multiple outputs efficiently with arrays.
 - **Key concept: `sizeof`**  
