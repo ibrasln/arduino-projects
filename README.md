@@ -58,4 +58,26 @@ Instead of hardcoding the array length, we calculate it dynamically:
 
 👉 [View Project Folder](./KnightRider)
 
+### 6. LED Dice
+- Press run → Arduino simulates a dice roll using 6 LEDs.
+- The LEDs first “animate” quickly, then stop on a random LED to show the result.
+- Components: Arduino Uno, 6x LEDs, 6x 330Ω resistors, jumper wires, breadboard.
+- Circuit: LEDs connected to pins 2–7 (with resistors). Cathodes connected to GND.
+
+**Key concepts used:**
+- `sizeof()` → calculates the number of LEDs automatically from the array.
+- `random()` → generates a number between 1–6 for the dice result.
+- `randomSeed(analogRead(0))` → seeds the random generator with noise from an unused analog pin, ensuring different results every reset.
+  - Without `randomSeed()`, Arduino’s `random()` produces the same sequence each time the board restarts.
+  - Using a floating analog pin gives unpredictable values to make the dice fair.
+
+**How it works:**
+1. LEDs animate in sequence with decreasing delay → looks like a dice rolling.
+2. A random number from 1–6 is chosen.
+3. The LED corresponding to that number lights up for 1.5 seconds.
+4. The LED turns off → ready for the next roll.
+
+👉 [View Project Folder](./Dice)
+
+
 
