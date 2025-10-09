@@ -89,7 +89,30 @@ Instead of hardcoding the array length, we calculate it dynamically:
 **Key concept: `map()`**
 - Converts a number from one range to another.
 - Example: `map(value, 0, 1023, 0, 180)` → turns potentiometer readings into servo angles.
+
 👉 [View Project Folder](./ServoMotor)
+
+### 8. Automatic Night Light
+- Automatically turns an LED **ON when it’s dark** and **OFF when it’s bright** using an **LDR (Light Dependent Resistor)**.  
+- Uses a **voltage divider** circuit to measure light intensity with the Arduino’s analog input.  
+- **Components:** Arduino Uno, 1x LDR (photoresistor), 1x 10kΩ resistor, 1x LED, 1x 220Ω resistor, jumper wires, breadboard.  
+- **Circuit:**  
+  - LDR → between **5V** and **A0**  
+  - 10kΩ resistor → between **A0** and **GND**  
+  - LED anode → **Pin 9**  
+  - LED cathode → **GND** (through 220Ω resistor)
+
+**Key concepts used:**
+- **Voltage Divider** → divides voltage between two resistors so Arduino can sense light level.  
+- **analogRead()** → reads light intensity as a value between 0–1023.  
+- **digitalWrite()** → turns LED ON/OFF depending on the light level.
+
+**How it works:**
+1. Arduino reads the analog voltage from the LDR.  
+2. If the value is below a threshold (meaning it’s dark), the LED turns **ON**.  
+3. If the value is above the threshold (bright), the LED turns **OFF**.
+
+👉 [View Project Folder](./AutoNightLight)
 
 
 
