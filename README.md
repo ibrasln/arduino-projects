@@ -83,7 +83,12 @@ Instead of hardcoding the array length, we calculate it dynamically:
 - Control a servo motor angle using a potentiometer.
 - Potentiometer gives analog values (0–1023). Arduino maps these values to servo angles (0–180°).
 - Components: Arduino Uno, 1x Servo (SG90), 1x 10kΩ potentiometer, jumper wires, breadboard.
-- Circuit: Pot middle pin → A0. Pot sides → 5V & GND. Servo signal → Pin 9. Servo VCC → 5V. Servo GND → GND.
+- Circuit:
+  - Pot middle pin → A0.
+  - Pot sides → 5V & GND.
+  - Servo signal → Pin 9.
+  - Servo VCC → 5V.
+  - Servo GND → GND.
 - Purpose: Introduces the Servo library, analog input with `analogRead()`, and mapping values with `map()`.
 
 **Key concept: `map()`**
