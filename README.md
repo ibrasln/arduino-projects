@@ -100,12 +100,11 @@ Instead of hardcoding the array length, we calculate it dynamically:
 ### 8. Automatic Night Light
 - Automatically turns an LED **ON when it’s dark** and **OFF when it’s bright** using an **LDR (Light Dependent Resistor)**.  
 - Uses a **voltage divider** circuit to measure light intensity with the Arduino’s analog input.  
-- **Components:** Arduino Uno, 1x LDR (photoresistor), 1x 10kΩ resistor, 1x LED, 1x 220Ω resistor, jumper wires, breadboard.  
+- **Components:** Arduino Uno, 1x LDR (photoresistor), 1x 10kΩ resistor, 1x LED, 1x 330Ω resistor, jumper wires, breadboard.  
 - **Circuit:**  
   - LDR → between **5V** and **A0**  
   - 10kΩ resistor → between **A0** and **GND**  
-  - LED anode → **Pin 9**  
-  - LED cathode → **GND** (through 220Ω resistor)
+  - LED → Pin 9 (with resistor)
 
 **Key concepts used:**
 - **Voltage Divider** → divides voltage between two resistors so Arduino can sense light level.  
