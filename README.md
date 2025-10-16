@@ -1,7 +1,7 @@
 # Arduino Basics Projects
 
 This repository contains beginner-friendly Arduino projects that I also share on my TikTok channel.  
-Each project has:
+Each project includes:
 - ✅ Arduino code (`.ino`)
 - ✅ Circuit design (TinkerCad screenshot)
 
@@ -9,163 +9,228 @@ Each project has:
 
 ## 📚 Projects
 
-### 1. Blink
-- The "Hello World" of Arduino.
-- An LED connected to Pin 13 blinks on and off.
-- Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 2x jumper wires.  
+---
 
-👉 [Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)
+### 1. Blink 💡  
+**A simple LED blink project — the “Hello World” of Arduino.**
 
+**🧠 How It Works**  
+Arduino turns the LED on and off with a short delay between each state. This introduces digital output and the `digitalWrite()` function.
+
+**🧩 Components**
+- Arduino Uno  
+- LED (1x)  
+- 330Ω resistor (1x)  
+- Jumper wires (2x)
+
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| LED (Anode) | 13 |
+| LED (Cathode) | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)  
 👉 [View Project Folder](./Blink)
 
 ---
 
-### 2. LED Lighting With Button
-- First interactive project with Arduino.
-- Pressing a button lights up an LED, releasing it turns it off.
-- Components: Arduino Uno, 1x LED, 1x button, 1x 330Ω resistor (for LED), 5x jumper wires.
-- Circuit: LED on Pin 8, Button on Pin 10 (with `INPUT_PULLUP`).
-- Why `INPUT_PULLUP`?  
-  By default, a pin without a signal can "float" between HIGH and LOW, causing random results.  
-  `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
-  When the button is pressed, it connects the pin to GND → the reading becomes LOW.
+### 2. LED Lighting With Button 🔘💡  
+**Control an LED with a button using Arduino’s internal pull-up resistor.**
 
-👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)
-  
+**🧠 How It Works**  
+The button is connected using `INPUT_PULLUP`. The pin reads HIGH when unpressed and LOW when pressed. Arduino turns the LED on when the input reads LOW.
+
+**🧩 Components**
+- Arduino Uno  
+- LED (1x)  
+- Button (1x)  
+- 330Ω resistor (1x, for LED)  
+- Jumper wires (5x)
+
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| LED (Anode) | 8 |
+| Button | 10 (with `INPUT_PULLUP`) |
+| LED (Cathode) | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)  
 👉 [View Project Folder](./LedLightingWithButton)
 
 ---
 
-### 3. Traffic Light
-- Simulates a basic traffic light system with 3 LEDs.
-- LEDs light up in sequence: red → yellow → green → repeat.
-- Components: Arduino Uno, 1x Red LED, 1x Yellow LED, 1x Green LED, 3x 330Ω resistors, 7x jumper wires, 1x breadboard.
-- Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
-- Purpose: Demonstrates controlling multiple outputs and using delays for timing.
+### 3. Traffic Light 🚦  
+**Simulates a three-light traffic signal using LEDs and delay timing.**
 
-👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
+**🧠 How It Works**  
+LEDs turn on in sequence: red → yellow → green → repeat. Demonstrates sequential control and timing with `delay()`.
 
+**🧩 Components**
+- Arduino Uno  
+- Red, Yellow, Green LEDs  
+- 330Ω resistors (3x)  
+- Jumper wires (7x)  
+- Breadboard (1x)
+
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| Red LED | 11 |
+| Yellow LED | 10 |
+| Green LED | 9 |
+| LED Cathodes | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)  
 👉 [View Project Folder](./TrafficLight)
 
 ---
 
-### 4. Potentiometer LED Brightness
-- Control LED brightness using a potentiometer.
-- Potentiometer works as a variable resistor: turning the knob changes the voltage on its middle pin.
-- Arduino reads this value as analog input (0–1023) and maps it to LED brightness (0–255).
-- Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 1x potentiometer (10kΩ), 5x jumper wires, 1x breadboard.
-- Circuit: Potentiometer middle pin → A0, side pins → 5V & GND. LED anode → Pin 9 with resistor, cathode → GND.
-- Purpose: Introduces analog input with analogRead() and PWM output with analogWrite().
+### 4. Potentiometer LED Brightness 🎚️💡  
+**Adjust LED brightness smoothly using a potentiometer.**
 
-👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)
+**🧠 How It Works**  
+The potentiometer acts as a voltage divider. Arduino reads its analog value (0–1023) and maps it to LED brightness (0–255) using `analogWrite()` and `map()`.
 
+**🧩 Components**
+- Arduino Uno  
+- LED (1x)  
+- 330Ω resistor (1x)  
+- 10kΩ potentiometer (1x)  
+- Jumper wires (5x)  
+- Breadboard (1x)
+
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| Pot Middle Pin | A0 |
+| Pot Sides | 5V & GND |
+| LED (Anode) | 9 |
+| LED (Cathode) | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)  
 👉 [View Project Folder](./PotentiometerLEDBrightness)
 
 ---
 
-### 5. Knight Rider LEDs
-- LEDs light up one by one from left to right, then back again (like the Knight Rider car).
-- Uses arrays, `for` loops, and `sizeof` to calculate the number of LEDs automatically.
-- Components: Arduino Uno, 5x LEDs, 5x 330Ω resistors, 11x jumper wires, 1x breadboard.
-- Circuit: LEDs connected to pins 3–7 (with resistors). Cathodes to GND.
-- Purpose: Demonstrates how to manage multiple outputs efficiently with arrays.
-- **Key concept: `sizeof`**  
-Instead of hardcoding the array length, we calculate it dynamically:  
+### 5. Knight Rider LEDs 🚗✨  
+**LEDs sweep back and forth, just like the Knight Rider car effect.**
 
-👉 [Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)
+**🧠 How It Works**  
+Uses arrays and `for` loops to control multiple LEDs efficiently. The number of LEDs is calculated automatically with `sizeof()`.
 
+**🧩 Components**
+- Arduino Uno  
+- LEDs (5x)  
+- 330Ω resistors (5x)  
+- Jumper wires (11x)  
+- Breadboard (1x)
+
+**⚙️ Pin Connections**
+| Component | Arduino Pins |
+|------------|---------------|
+| LEDs (Anodes) | 3–7 |
+| LEDs (Cathodes) | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)  
 👉 [View Project Folder](./KnightRider)
 
 ---
 
-### 6. LED Dice
-- Press run → Arduino simulates a dice roll using 6 LEDs.
-- The LEDs first “animate” quickly, then stop on a random LED to show the result.
-- Components: Arduino Uno, 6x LEDs, 6x 330Ω resistors, jumper wires, breadboard.
-- Circuit: LEDs connected to pins 2–7 (with resistors). Cathodes connected to GND.
+### 6. LED Dice 🎲💡  
+**Roll a digital dice with LEDs lighting randomly to show a result.**
 
-**Key concepts used:**
-- `sizeof()` → calculates the number of LEDs automatically from the array.
-- `random()` → generates a number between 1–6 for the dice result.
-- `randomSeed(analogRead(0))` → seeds the random generator with noise from an unused analog pin, ensuring different results every reset.
-  - Without `randomSeed()`, Arduino’s `random()` produces the same sequence each time the board restarts.
-  - Using a floating analog pin gives unpredictable values to make the dice fair.
+**🧠 How It Works**  
+When triggered, LEDs animate quickly, then stop randomly on one to represent a dice roll.  
+- `random()` picks a number between 1–6.  
+- `randomSeed(analogRead(0))` ensures different outcomes every time.
 
-**How it works:**
-1. LEDs animate in sequence with decreasing delay → looks like a dice rolling.
-2. A random number from 1–6 is chosen.
-3. The LED corresponding to that number lights up for 1.5 seconds.
-4. The LED turns off → ready for the next roll.
+**🧩 Components**
+- Arduino Uno  
+- LEDs (6x)  
+- 330Ω resistors (6x)  
+- Jumper wires  
+- Breadboard
 
-👉 [Watch the Video](https://www.youtube.com/shorts/4hf8laawVPo)
+**⚙️ Pin Connections**
+| Component | Arduino Pins |
+|------------|---------------|
+| LEDs (Anodes) | 2–7 |
+| LEDs (Cathodes) | GND |
 
+👉 [Watch the Video](https://www.youtube.com/shorts/4hf8laawVPo)  
 👉 [View Project Folder](./Dice)
 
 ---
 
-### 7. Servo With Potentiometer
-- Control a servo motor angle using a potentiometer.
-- Potentiometer gives analog values (0–1023). Arduino maps these values to servo angles (0–180°).
-- Components: Arduino Uno, 1x Servo (SG90), 1x 10kΩ potentiometer, jumper wires, breadboard.
-- Circuit:
-  - Pot middle pin → A0.
-  - Pot sides → 5V & GND.
-  - Servo signal → Pin 9.
-  - Servo VCC → 5V.
-  - Servo GND → GND.
-- Purpose: Introduces the Servo library, analog input with `analogRead()`, and mapping values with `map()`.
+### 7. Servo With Potentiometer 🎚️⚙️  
+**Control a servo motor’s rotation angle using a potentiometer.**
 
-**Key concept: `map()`**
-- Converts a number from one range to another.
-- Example: `map(value, 0, 1023, 0, 180)` → turns potentiometer readings into servo angles.
+**🧠 How It Works**  
+Arduino reads analog values from the potentiometer (0–1023) and maps them to servo angles (0–180°) with the `map()` function.
 
-👉 [Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)
+**🧩 Components**
+- Arduino Uno  
+- SG90 Servo (1x)  
+- 10kΩ potentiometer (1x)  
+- Jumper wires  
+- Breadboard
 
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| Pot Middle Pin | A0 |
+| Pot Sides | 5V & GND |
+| Servo Signal | 9 |
+| Servo VCC | 5V |
+| Servo GND | GND |
+
+👉 [Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)  
 👉 [View Project Folder](./ServoMotor)
 
 ---
 
-### 8. Automatic Night Light
-- Automatically turns an LED **ON when it’s dark** and **OFF when it’s bright** using an **LDR (Light Dependent Resistor)**.  
-- Uses a **voltage divider** circuit to measure light intensity with the Arduino’s analog input.  
-- **Components:** Arduino Uno, 1x LDR (photoresistor), 1x 10kΩ resistor, 1x LED, 1x 330Ω resistor, jumper wires, breadboard.  
-- **Circuit:**  
-  - LDR → between **5V** and **A0**  
-  - 10kΩ resistor → between **A0** and **GND**  
-  - LED → Pin 9 (with resistor)
+### 8. Automatic Night Light 🌙💡  
+**LED turns ON when it’s dark and OFF when it’s bright using an LDR.**
 
-**Key concepts used:**
-- **Voltage Divider** → divides voltage between two resistors so Arduino can sense light level.  
-- **analogRead()** → reads light intensity as a value between 0–1023.  
-- **digitalWrite()** → turns LED ON/OFF depending on the light level.
+**🧠 How It Works**  
+The LDR (light-dependent resistor) and a 10kΩ resistor form a voltage divider. Arduino reads light levels through `analogRead()`. When the value drops below a threshold, the LED turns ON.
 
-**How it works:**
-1. Arduino reads the analog voltage from the LDR.  
-2. If the value is below a threshold (meaning it’s dark), the LED turns **ON**.  
-3. If the value is above the threshold (bright), the LED turns **OFF**.
+**🧩 Components**
+- Arduino Uno  
+- LDR (photoresistor)  
+- 10kΩ resistor  
+- LED  
+- 330Ω resistor  
+- Jumper wires  
+- Breadboard
 
-👉 [Watch the Video](https://www.youtube.com/shorts/gPUEkpnd1DU)
+**⚙️ Pin Connections**
+| Component | Arduino Pin |
+|------------|--------------|
+| LDR | Between 5V and A0 |
+| 10kΩ Resistor | Between A0 and GND |
+| LED (Anode) | 9 |
+| LED (Cathode) | GND |
 
+👉 [Watch the Video](https://www.youtube.com/shorts/gPUEkpnd1DU)  
 👉 [View Project Folder](./AutoNightLight)
 
 ---
 
-### 9. Parking Sensor 🚗🔊
+### 9. Parking Sensor 🚗🔊  
+**Detects nearby objects using an ultrasonic sensor, LEDs, and a buzzer.**
 
-A simple Arduino project that detects the distance of nearby objects using an ultrasonic sensor and provides feedback using LEDs and a buzzer — just like a parking sensor!
-
-**🧠 How It Works**
-- **Ultrasonic Sensor (HC-SR04)** measures the distance.
-- Depending on the distance:
-  - 🟢 **Green LED** → Safe distance  
-  - 🟡 **Yellow LED** → Getting close  
-  - 🔴 **Red LED + Buzzer** → Too close!
+**🧠 How It Works**  
+The **HC-SR04** ultrasonic sensor measures distance. Depending on the result:  
+- 🟢 Green LED → Safe distance  
+- 🟡 Yellow LED → Getting close  
+- 🔴 Red LED + Buzzer → Too close!
 
 **🧩 Components**
-- Arduino Uno (or any compatible board)
-- HC-SR04 Ultrasonic Sensor
-- Red, Yellow, and Green LEDs
-- Piezo Buzzer
+- Arduino Uno  
+- HC-SR04 Ultrasonic Sensor  
+- Red, Yellow, Green LEDs  
+- Piezo Buzzer  
 - Jumper wires & Breadboard
 
 **⚙️ Pin Connections**
@@ -178,6 +243,5 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 | Red LED | 11 |
 | Buzzer | 9 |
 
-👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
-
+👉 [Watch the Video](https://www.youtube.com/shorts/pNzxYj9Xkfc)  
 👉 [View Project Folder](./ParkingSensor)
