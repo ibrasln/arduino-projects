@@ -16,7 +16,7 @@ Each project has:
 
 ## 📹 Video Explanation
 Watch the full video to see how it works in real life!  
-*[(Video)](https://www.youtube.com/shorts/z9_eAP-Q8zg)*
+*[Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)*
 
  [View Project Folder](./Blink)
 
@@ -29,6 +29,10 @@ Watch the full video to see how it works in real life!
   By default, a pin without a signal can "float" between HIGH and LOW, causing random results.  
   `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
   When the button is pressed, it connects the pin to GND → the reading becomes LOW.
+
+## 📹 Video Explanation
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)*
   
 👉 [View Project Folder](./LedLightingWithButton)
 
