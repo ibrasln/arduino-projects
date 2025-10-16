@@ -14,7 +14,11 @@ Each project has:
 - An LED connected to Pin 13 blinks on and off.
 - Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 2x jumper wires.  
 
-👉 [View Project Folder](./Blink)
+## 📹 Video Explanation
+Watch the full video to see how it works in real life!  
+*[(Video)](https://www.youtube.com/shorts/z9_eAP-Q8zg)*
+
+ [View Project Folder](./Blink)
 
 ### 2. LED Lighting With Button
 - First interactive project with Arduino.
@@ -118,5 +122,44 @@ Instead of hardcoding the array length, we calculate it dynamically:
 
 👉 [View Project Folder](./AutoNightLight)
 
+# Parking Sensor 🚗🔊
+
+A simple Arduino project that detects the distance of nearby objects using an ultrasonic sensor and provides feedback using LEDs and a buzzer — just like a parking sensor!
+
+---
+
+## 🧠 How It Works
+- **Ultrasonic Sensor (HC-SR04)** measures the distance.
+- Depending on the distance:
+  - 🟢 **Green LED** → Safe distance  
+  - 🟡 **Yellow LED** → Getting close  
+  - 🔴 **Red LED + Buzzer** → Too close!
+
+---
+
+## 🧩 Components
+- Arduino Uno (or any compatible board)
+- HC-SR04 Ultrasonic Sensor
+- Red, Yellow, and Green LEDs
+- Piezo Buzzer
+- Jumper wires & Breadboard
+
+---
+
+## ⚙️ Pin Connections
+| Component | Arduino Pin |
+|------------|--------------|
+| Trig | 7 |
+| Echo | 6 |
+| Green LED | 13 |
+| Yellow LED | 12 |
+| Red LED | 11 |
+| Buzzer | 9 |
+
+---
+
+## 📹 Video Explanation
+Watch the full video to see how it works in real life!  
+*(Add your YouTube link here)*
 
 
