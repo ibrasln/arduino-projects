@@ -14,11 +14,9 @@ Each project has:
 - An LED connected to Pin 13 blinks on and off.
 - Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 2x jumper wires.  
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)*
+👉 [Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)
 
- [View Project Folder](./Blink)
+👉 [View Project Folder](./Blink)
 
 ### 2. LED Lighting With Button
 - First interactive project with Arduino.
@@ -30,9 +28,7 @@ Watch the full video to see how it works in real life!
   `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
   When the button is pressed, it connects the pin to GND → the reading becomes LOW.
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)*
+👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)
   
 👉 [View Project Folder](./LedLightingWithButton)
 
@@ -43,9 +39,7 @@ Watch the full video to see how it works in real life!
 - Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
 - Purpose: Demonstrates controlling multiple outputs and using delays for timing.
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)*
+👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
 
 👉 [View Project Folder](./TrafficLight)
 
@@ -57,9 +51,7 @@ Watch the full video to see how it works in real life!
 - Circuit: Potentiometer middle pin → A0, side pins → 5V & GND. LED anode → Pin 9 with resistor, cathode → GND.
 - Purpose: Introduces analog input with analogRead() and PWM output with analogWrite().
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)*
+👉 [Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)
 
 👉 [View Project Folder](./PotentiometerLEDBrightness)
 
@@ -72,9 +64,7 @@ Watch the full video to see how it works in real life!
 - **Key concept: `sizeof`**  
 Instead of hardcoding the array length, we calculate it dynamically:  
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)*
+👉 [Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)
 
 👉 [View Project Folder](./KnightRider)
 
@@ -97,9 +87,7 @@ Watch the full video to see how it works in real life!
 3. The LED corresponding to that number lights up for 1.5 seconds.
 4. The LED turns off → ready for the next roll.
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/4hf8laawVPo)*
+👉 [Watch the Video](https://www.youtube.com/shorts/4hf8laawVPo)
 
 👉 [View Project Folder](./Dice)
 
@@ -119,9 +107,7 @@ Watch the full video to see how it works in real life!
 - Converts a number from one range to another.
 - Example: `map(value, 0, 1023, 0, 180)` → turns potentiometer readings into servo angles.
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)*
+👉 [Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)
 
 👉 [View Project Folder](./ServoMotor)
 
@@ -144,9 +130,7 @@ Watch the full video to see how it works in real life!
 2. If the value is below a threshold (meaning it’s dark), the LED turns **ON**.  
 3. If the value is above the threshold (bright), the LED turns **OFF**.
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/gPUEkpnd1DU)*
+👉 [Watch the Video](https://www.youtube.com/shorts/gPUEkpnd1DU)
 
 👉 [View Project Folder](./AutoNightLight)
 
@@ -186,8 +170,6 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 
 ---
 
-**📹 Video Explanation**
-Watch the full video to see how it works in real life!  
-*[Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)*
+👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
 
 👉 [View Project Folder](./ParkingSensor)
