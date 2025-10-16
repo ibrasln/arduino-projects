@@ -14,7 +14,7 @@ Each project has:
 - An LED connected to Pin 13 blinks on and off.
 - Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 2x jumper wires.  
 
-## 📹 Video Explanation
+**📹 Video Explanation**
 Watch the full video to see how it works in real life!  
 *[Watch the Video](https://www.youtube.com/shorts/z9_eAP-Q8zg)*
 
@@ -30,7 +30,7 @@ Watch the full video to see how it works in real life!
   `INPUT_PULLUP` uses Arduino’s internal resistor to keep the pin stable (default HIGH).  
   When the button is pressed, it connects the pin to GND → the reading becomes LOW.
 
-## 📹 Video Explanation
+**📹 Video Explanation**
 Watch the full video to see how it works in real life!  
 *[Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)*
   
@@ -43,6 +43,10 @@ Watch the full video to see how it works in real life!
 - Circuit: Red LED on Pin 11, Yellow LED on Pin 10, Green LED on Pin 9 (all with resistors), cathodes connected to GND.
 - Purpose: Demonstrates controlling multiple outputs and using delays for timing.
 
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)*
+
 👉 [View Project Folder](./TrafficLight)
 
 ### 4. Potentiometer LED Brightness
@@ -52,6 +56,10 @@ Watch the full video to see how it works in real life!
 - Components: Arduino Uno, 1x LED, 1x 330Ω resistor, 1x potentiometer (10kΩ), 5x jumper wires, 1x breadboard.
 - Circuit: Potentiometer middle pin → A0, side pins → 5V & GND. LED anode → Pin 9 with resistor, cathode → GND.
 - Purpose: Introduces analog input with analogRead() and PWM output with analogWrite().
+
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/3LjQrxnnY38)*
 
 👉 [View Project Folder](./PotentiometerLEDBrightness)
 
@@ -63,6 +71,10 @@ Watch the full video to see how it works in real life!
 - Purpose: Demonstrates how to manage multiple outputs efficiently with arrays.
 - **Key concept: `sizeof`**  
 Instead of hardcoding the array length, we calculate it dynamically:  
+
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)*
 
 👉 [View Project Folder](./KnightRider)
 
@@ -85,6 +97,10 @@ Instead of hardcoding the array length, we calculate it dynamically:
 3. The LED corresponding to that number lights up for 1.5 seconds.
 4. The LED turns off → ready for the next roll.
 
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/4hf8laawVPo)*
+
 👉 [View Project Folder](./Dice)
 
 ### 7. Servo With Potentiometer
@@ -102,6 +118,10 @@ Instead of hardcoding the array length, we calculate it dynamically:
 **Key concept: `map()`**
 - Converts a number from one range to another.
 - Example: `map(value, 0, 1023, 0, 180)` → turns potentiometer readings into servo angles.
+
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)*
 
 👉 [View Project Folder](./ServoMotor)
 
@@ -124,15 +144,19 @@ Instead of hardcoding the array length, we calculate it dynamically:
 2. If the value is below a threshold (meaning it’s dark), the LED turns **ON**.  
 3. If the value is above the threshold (bright), the LED turns **OFF**.
 
+**📹 Video Explanation**
+Watch the full video to see how it works in real life!  
+*[Watch the Video](https://www.youtube.com/shorts/gPUEkpnd1DU)*
+
 👉 [View Project Folder](./AutoNightLight)
 
-# Parking Sensor 🚗🔊
+### 9. Parking Sensor 🚗🔊
 
 A simple Arduino project that detects the distance of nearby objects using an ultrasonic sensor and provides feedback using LEDs and a buzzer — just like a parking sensor!
 
 ---
 
-## 🧠 How It Works
+**🧠 How It Works**
 - **Ultrasonic Sensor (HC-SR04)** measures the distance.
 - Depending on the distance:
   - 🟢 **Green LED** → Safe distance  
@@ -141,7 +165,7 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 
 ---
 
-## 🧩 Components
+**🧩 Components**
 - Arduino Uno (or any compatible board)
 - HC-SR04 Ultrasonic Sensor
 - Red, Yellow, and Green LEDs
@@ -150,7 +174,7 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 
 ---
 
-## ⚙️ Pin Connections
+**⚙️ Pin Connections**
 | Component | Arduino Pin |
 |------------|--------------|
 | Trig | 7 |
@@ -162,8 +186,8 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 
 ---
 
-## 📹 Video Explanation
+**📹 Video Explanation**
 Watch the full video to see how it works in real life!  
-*(Add your YouTube link here)*
+*[Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)*
 
-
+👉 [View Project Folder](./ParkingSensor)
