@@ -18,6 +18,8 @@ Each project has:
 
 👉 [View Project Folder](./Blink)
 
+---
+
 ### 2. LED Lighting With Button
 - First interactive project with Arduino.
 - Pressing a button lights up an LED, releasing it turns it off.
@@ -32,6 +34,8 @@ Each project has:
   
 👉 [View Project Folder](./LedLightingWithButton)
 
+---
+
 ### 3. Traffic Light
 - Simulates a basic traffic light system with 3 LEDs.
 - LEDs light up in sequence: red → yellow → green → repeat.
@@ -42,6 +46,8 @@ Each project has:
 👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
 
 👉 [View Project Folder](./TrafficLight)
+
+---
 
 ### 4. Potentiometer LED Brightness
 - Control LED brightness using a potentiometer.
@@ -55,6 +61,8 @@ Each project has:
 
 👉 [View Project Folder](./PotentiometerLEDBrightness)
 
+---
+
 ### 5. Knight Rider LEDs
 - LEDs light up one by one from left to right, then back again (like the Knight Rider car).
 - Uses arrays, `for` loops, and `sizeof` to calculate the number of LEDs automatically.
@@ -67,6 +75,8 @@ Instead of hardcoding the array length, we calculate it dynamically:
 👉 [Watch the Video](https://www.youtube.com/shorts/NmfQXfB9BOk)
 
 👉 [View Project Folder](./KnightRider)
+
+---
 
 ### 6. LED Dice
 - Press run → Arduino simulates a dice roll using 6 LEDs.
@@ -91,6 +101,8 @@ Instead of hardcoding the array length, we calculate it dynamically:
 
 👉 [View Project Folder](./Dice)
 
+---
+
 ### 7. Servo With Potentiometer
 - Control a servo motor angle using a potentiometer.
 - Potentiometer gives analog values (0–1023). Arduino maps these values to servo angles (0–180°).
@@ -110,6 +122,8 @@ Instead of hardcoding the array length, we calculate it dynamically:
 👉 [Watch the Video](https://www.youtube.com/shorts/SNZc4-IR3Oc)
 
 👉 [View Project Folder](./ServoMotor)
+
+---
 
 ### 8. Automatic Night Light
 - Automatically turns an LED **ON when it’s dark** and **OFF when it’s bright** using an **LDR (Light Dependent Resistor)**.  
@@ -134,11 +148,11 @@ Instead of hardcoding the array length, we calculate it dynamically:
 
 👉 [View Project Folder](./AutoNightLight)
 
+---
+
 ### 9. Parking Sensor 🚗🔊
 
 A simple Arduino project that detects the distance of nearby objects using an ultrasonic sensor and provides feedback using LEDs and a buzzer — just like a parking sensor!
-
----
 
 **🧠 How It Works**
 - **Ultrasonic Sensor (HC-SR04)** measures the distance.
@@ -147,16 +161,12 @@ A simple Arduino project that detects the distance of nearby objects using an ul
   - 🟡 **Yellow LED** → Getting close  
   - 🔴 **Red LED + Buzzer** → Too close!
 
----
-
 **🧩 Components**
 - Arduino Uno (or any compatible board)
 - HC-SR04 Ultrasonic Sensor
 - Red, Yellow, and Green LEDs
 - Piezo Buzzer
 - Jumper wires & Breadboard
-
----
 
 **⚙️ Pin Connections**
 | Component | Arduino Pin |
@@ -167,8 +177,6 @@ A simple Arduino project that detects the distance of nearby objects using an ul
 | Yellow LED | 12 |
 | Red LED | 11 |
 | Buzzer | 9 |
-
----
 
 👉 [Watch the Video](https://www.youtube.com/shorts/AVkiNXyv-d8)
 
